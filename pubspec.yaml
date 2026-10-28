@@ -1,0 +1,32 @@
+name: smart_house
+version: 1.0.0
+description: Bluetooth sensor
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  scoped_model: ^2.0.0-nullsafety.0
+  cupertino_icons: ^1.0.3
+  flutter_bluetooth_serial:
+    git:
+      url: https://github.com/bswhite1/flutter_bluetooth_serial
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.11.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+# run command to generate icons: flutter pub run flutter_launcher_icons
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/furnace.png"
